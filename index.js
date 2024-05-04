@@ -1,41 +1,4 @@
-// import { faker } from "@faker-js/faker";
-// // Customer Class
-// class Customer {
-//     fname: string;
-//     lName: string;
-//     age: number;
-//     gender: string;
-//     mobNumber: number;
-//     accNumber: number;
-//     constructor(fname: string, lName: string, age: number, gender: string, mobNumber: number, accNumber: number) {
-//         this.fname = fname;
-//         this.lName = lName;
-//         this.age = age;
-//         this.gender = gender;
-//         this.mobNumber = mobNumber;
-//         this.accNumber = accNumber;
-//     }
-// }
-// //  Interface Bank Account
-//     interface BankAccount {
-//         accNumber : number;
-//         balance : number;
-//     }
-//     //  Class Bank
-//     class Bank {
-//         customer: Customer[]= [];
-//         account: BankAccount[] = [];
-//     }
-//      let bankAlHabib = new Bank();
-// //  creat customer
-//      for(let i:number = 1; i <=3 ; i++)
-//         {
-//             let fname = faker.person.firstName('male');
-//             let lName = faker.person.lastName();
-//             let num = parseInt(faker.phone.number("3#########"));
-//             const cus = new Customer(fname, lName, 20 * i, "male", num, 1000+i);
-//         }
-//      console.log(bankAlHabib);
+#! user/bin/env node
 import { faker } from '@faker-js/faker';
 import chalk from 'chalk';
 import inquirer from "inquirer";
