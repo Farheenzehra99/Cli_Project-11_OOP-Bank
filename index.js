@@ -87,9 +87,13 @@ async function bankService(bank) {
                     message: "Please Enter Your amount.",
                     name: "rupee",
                 });
+                if (ans.rupee > account.balance) {
+                    console.log(chalk.red.bold("Insuficiant Balance...."));
+                }
                 let newBalance = account.balance - ans.rupee;
                 // transaction method call
                 bank.transaction({ accNumber: account.accNumber, balance: newBalance });
+                console.log(newBalance);
             }
         }
         // Cash Deposite
@@ -114,6 +118,7 @@ async function bankService(bank) {
                     let newBalance = account.balance + ans.rupee;
                     // transaction method call
                     bank.transaction({ accNumber: account.accNumber, balance: newBalance });
+                    console.log(newBalance);
                 }
             }
         }
